@@ -111,13 +111,13 @@ export class ProductsService {
   }
 
   async updateProduct(newData) {
-    const updatedProduct = await this.findProduct(newData.id);
+    const updatedProduct: Product = await this.findProduct(newData.id);
 
     for (const prop in newData) {
       updatedProduct[prop] = newData[prop];
     }
     console.log("EDIT");
-    updatedProduct.save();
+    // updatedProduct.save();
   }
 
   async deleteProduct(prodId: string) {
