@@ -20,7 +20,7 @@ export const ProductSchema = new mongoose.Schema({
 });
 
 export interface Product extends mongoose.Document{
-    id: string;
+    _id: string;
     title: string;
     description: string;
     qty: number;
