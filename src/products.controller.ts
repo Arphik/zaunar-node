@@ -105,6 +105,7 @@ export class ProductsController {
       length,
       width,
     });
+    console.log("UPDATE");
   }
 
   @Delete(':id')
